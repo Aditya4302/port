@@ -3,44 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work in Progress</title>
-<style>
-  html, body{
-    margin:0;
-    height:100%;
-    background:#10161d;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  h1{
-    font-family: Arial, sans-serif;
-    color:#e9eef2;
-    font-size: clamp(28px, 6vw, 48px);
-    text-align:center;
-    margin:0;
-  }
-  .copyright{
-  font-family: Arial, sans-serif;
-  color:#8a97a3;
-  font-size: 13px;
-  margin-top: 12px;
-  text-align:center;
+<title>Aditya Kumar Thakur — Full-Stack Developer</title>
 
-}
-body{
-  margin:0;
-  height:100%;
-  background:#10161d;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-}
-</style>
+<link rel="icon" type="image/jpeg" href="photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Under Construction...!!!</h1>
-  <p class="copyright">&copy; 2026 Aditya. All rights reserved.</p>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div id="bgGlow" class="bg-glow" aria-hidden="true"></div>
+  <div id="bgCode" class="bg-code" aria-hidden="true">
+    <div id="layerFar" class="code-layer" data-depth="far"></div>
+    <div id="layerMid" class="code-layer" data-depth="mid"></div>
+    <div id="layerNear" class="code-layer" data-depth="near"></div>
+  </div>
+
+  <nav class="titlebar">
+    <div class="brand-mark">
+      <img src="photo.jpg" alt="Aditya Kumar Thakur logo" class="logo-img">
+    </div>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-target="#hero">about.js</button>
+      <button class="tab" data-target="#education">education.md</button>
+      <button class="tab" data-target="#projects">projects.js</button>
+      <button class="tab" data-target="#skills">skills.json</button>
+      <button class="tab" data-target="#activity">CERT & activity.log</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="hero" class="editor-section">
+      <div class="gutter">
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+      </div>
+      <div class="code-content">
+        <p class="tag">// about.js</p>
+        <pre class="hero-code" id="heroType"></pre>
+        <h1>Aditya Kumar Thakur</h1>
+
+        <h2>Building Software. Exploring AI. Learning DevOps.</h2>
+
+        <p class="hero-sub">
+          Java Developer passionate about creating practical applications, exploring
+          Artificial Intelligence and Machine Learning, and continuously growing with
+          modern DevOps technologies.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-solid" href="#projects">
+            <span class="punc">&gt;</span> view projects
+          </a>
+          
+
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="editor-section">
+      <div class="gutter">
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span><span class="ln"></span>
+      </div>
+      <div class="code-content">
+        <div class="sec-head">
+          <span class="kw">##</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-school">Kalinga Institute of Industrial Technology, Bhubaneswar</div>
+          <div class="edu-meta">B.Tech in CSE (Honors Program) &middot; Aug 2022 – May 2026 </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-school">Class 12th, National Examination Board  &middot; GPA <span class="edu-score">3.52 / 4.0 (88%)</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="editor-section">
+      <div class="gutter">
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span><span class="ln"></span>
+      </div>
+      <div class="code-content">
+        <div class="sec-head">
+          <span class="kw">function</span>
+          <h2>projects()</h2>
+          <span class="punc">{}</span>
+        </div>
+
+        <article class="project">
+          <div class="project-title"><span class="kw">const</span> <span class="fn">NIDS</span> <span class="punc">=</span> <span class="str">"Network Intrusion Detection System"</span></div>
+          <ul>
+  <li>Processed <strong>100,000+</strong> network traffic records using Python and Pandas for efficient analysis.</li>
+  <li>Applied Machine Learning algorithms to classify malicious traffic with <strong>95%+ detection accuracy</strong>.</li>
+  <li>Designed an automated evaluation pipeline, reducing model testing time by <strong>40%</strong>.</li>
+</ul>
+          <div class="stack"><span>Python</span><span>Pandas</span><span>Machine Learning</span><span>Feature Engineering</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-title"><span class="kw">const</span> <span class="fn">ATMSimulator</span> <span class="punc">=</span> <span class="str">"Virtual Banking System"</span></div>
+          <ul>
+  <li>Developed a Java-based ATM Simulator System with JavaFX and MySQL, implementing <strong>8+ banking operations</strong> such as withdrawals, deposits, balance enquiry, PIN change, and mini statements.</li>
+  <li>Designed a secure authentication system and optimized database queries for accurate transaction processing.</li>
+  <li>Built a user-friendly interface with reliable backend integration, simulating a real-world banking experience.</li>
+</ul>
+          <div class="stack"><span>Java</span><span>JavaFX</span><span>MySQL</span><span>Security</span></div>
+        </article>
+
+        <article class="project">
+          <div class="project-title"><span class="kw">const</span> <span class="fn">SimonSays</span> <span class="punc">=</span> <span class="str">"Browser Memory Game"</span></div>
+         <ul>
+  <li>Developed a browser-based Simon Says game using HTML, CSS, and JavaScript with <strong></strong> progressive difficulty levels.</li>
+  <li>Implemented random sequence generation, score tracking, and real-time input validation for an engaging gameplay experience.</li>
+  <li>Built a responsive interface compatible with desktop and mobile devices, ensuring smooth performance across different screen sizes.</li>
+</ul>
+          <div class="stack"><span>JavaScript</span><span>CSS</span><span>HTML</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="editor-section">
+      <div class="gutter">
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+      </div>
+      <div class="code-content">
+        <div class="sec-head">
+          <span class="kw">const</span>
+          <h2>skills</h2>
+          <span class="punc">= {</span>
+        </div>
+
+        <div class="skill-block">
+          <span class="skill-key">"languages":</span>
+          <div class="pill-row">
+            <span class="pill">Java (preferred)</span><span class="pill">JavaScript</span>
+            <span class="pill">C++</span><span class="pill">Python</span><span class="pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <span class="skill-key">"frameworks":</span>
+          <div class="pill-row">
+            <span class="pill">Node.js</span><span class="pill">React</span><span class="pill">Kubernetes</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <span class="skill-key">"tools":</span>
+          <div class="pill-row">
+            <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span>
+            <span class="pill">Docker</span><span class="pill">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <span class="skill-key">"core_cs":</span>
+          <div class="pill-row">
+            <span class="pill">Data Structures</span><span class="pill">Algorithms</span><span class="pill">OOP</span>
+            <span class="pill">DBMS</span><span class="pill">Operating Systems</span><span class="pill">Computer Networks</span>
+            <span class="pill">Machine Learning</span><span class="pill">Artificial Intelligence</span><span class="pill">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <span class="skill-key">"os":</span>
+          <div class="pill-row">
+            <span class="pill">Windows</span><span class="pill">Linux</span>
+          </div>
+        </div>
+        <span class="punc">}</span>
+      </div>
+    </section>
+
+    <section id="activity" class="editor-section">
+      <div class="gutter">
+        <span class="ln"></span><span class="ln"></span><span class="ln"></span><span class="ln"></span>
+        <span class="ln"></span>
+      </div>
+      <div class="code-content">
+        <div class="sec-head">
+          <span class="kw">tail</span>
+          <h2>-f activity.log</h2>
+        </div>
+
+        <div class="log-line">
+          <span class="log-tag role">ROLE</span>
+          <span>Country Representative — KIIT International Students Society</span>
+        </div>
+        <div class="log-line">
+          <span class="log-tag cert">CERT</span>
+          <span>Google Cybersecurity — Coursera</span>
+        </div>
+        <div class="log-line">
+          <span class="log-tag cert">CERT</span>
+          <span>Problem Solving (Basic) — HackerRank</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="foot-inner">
+      <span>&copy; <span id="year"></span> Aditya. All rights reserved.</span>
+      <div class="foot-links"><a href="mailto:techinfo.thakur@gmail.com">techinfo.thakur@gmail.com</a></div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
